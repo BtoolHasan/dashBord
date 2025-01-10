@@ -34,7 +34,7 @@ class CustomTabBar extends StatelessWidget {
                 width: 20,
               ),
               Text(
-                'DashBord',
+                'DashBoard',
                 style: kCandara20.copyWith(color: kWhiteColor, fontSize: 30),
               ),
             ],
