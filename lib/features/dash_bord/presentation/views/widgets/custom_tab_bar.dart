@@ -14,14 +14,37 @@ class CustomTabBar extends StatelessWidget {
             ? 0.3
             : 0.4;
     return Container(
-      //  width: screenWidth * tapBarScalling,
-      width: screenWidth,
-      color: kPrimeryColor,
-      child: TabBar(
-        tabs: tabs,
-        indicatorColor: kSecondaryColor,
-        controller: controller,
-      ),
-    );
+        //  width: screenWidth * tapBarScalling,
+        width: screenWidth,
+        height: 60,
+        color: kPrimeryColor,
+        child: AppBar(
+          backgroundColor: kPrimeryColor,
+          leadingWidth: 400,
+          leading: Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 40),
+                child: SizedBox(
+                    width: 40,
+                    height: 40,
+                    child: Image.asset('assets/images/Rest.jpg')),
+              ),
+              const SizedBox(
+                width: 20,
+              ),
+              Text(
+                'DashBord',
+                style: kCandara20.copyWith(color: kWhiteColor, fontSize: 30),
+              ),
+            ],
+          ),
+          title: TabBar(
+            tabs: tabs,
+            // indicatorColor: kSecondaryColor,
+
+            controller: controller,
+          ),
+        ));
   }
 }

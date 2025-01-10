@@ -134,18 +134,5 @@ class _AddStoreBodyState extends State<AddStoreBody> {
     );
   }
 
-  // Row newStoreInfo(String text1) {
-  //   return Row(
-  //     children: [
-  //       Text(
-  //         text1,
-  //         style: kCandara18Bold.copyWith(fontSize: 16),
-  //       ),
-  //       const SizedBox(
-  //         width: 15,
-  //       ),
-  //       TextFieldWidget(width: 200, height: 25),
-  //     ],
-  //   );
-  // }
+
 }

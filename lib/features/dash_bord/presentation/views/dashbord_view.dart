@@ -36,7 +36,8 @@ class _DashbordViewState extends State<DashbordView>
     ),
     Content(
         tab: const CustomTab(title: 'users'), content: const AddStoreBody()),
-    Content(tab: const CustomTab(title: 'more'), content: const AddProductBody()),
+    Content(
+        tab: const CustomTab(title: 'more'), content: const AddProductBody()),
   ];
 
   @override
@@ -56,7 +57,8 @@ class _DashbordViewState extends State<DashbordView>
     return Padding(
       padding: EdgeInsets.only(top: topPadding, bottom: bottomPaddig),
       child: Scaffold(
-        endDrawer: drawer(),
+        //endDrawer: drawer(),
+
         key: scaffoldKey,
         body: LayoutBuilder(builder: (context, Constraints) {
           if (Constraints.maxWidth > 715) {
